@@ -3,16 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Muggetti Seguros | Seguros y planificación financiera</title>
-
+    <title>Mugetti Seguros | Seguros y planificación financiera</title>
     <meta
       name="description"
-      content="Asesoramiento en seguros y planificación financiera para individuos, empresas y productores agropecuarios en Carmen de Areco y Buenos Aires."
+      content="Asesoramiento en seguros, medicina prepaga y planificación financiera para individuos, empresas y productores agropecuarios en Carmen de Areco y Buenos Aires."
     />
+    <link rel="icon" type="image/png" href="images/logos/favicon.png" />
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="css/styles.css" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
       rel="stylesheet"
@@ -20,53 +18,52 @@
   </head>
 
   <body>
-    <!-- NAVBAR -->
-
     <header class="navbar">
       <div class="container navbar-container">
-        <a href="index.html" class="logo"
-          ><img class="img-logo" src="images/logos/logo.png" alt="" /><span
-            >MUGETTI SEGUROS</span
-          ></a
-        >
+        <a href="index.html" class="logo">
+          <img src="images/logos/logo.png" alt="Logo de Mugetti Seguros" />
+          <span class="logo-text">
+            <span class="logo-kicker">Seguros Generales</span>
+            <span class="logo-name">Mugetti</span>
+          </span>
+        </a>
 
-        <button class="menu-toggle">☰</button>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
 
         <nav class="nav-menu">
-          <a href="#hero">INICIO</a>
-          <a href="#servicios">SERVICIOS</a>
-          <a href="#beneficios">NOSOTROS</a>
-          <a href="#sectores">SECTORES</a>
-          <a href="#contacto">CONTACTO</a>
+          <a href="#hero">Inicio</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#beneficios">Nosotros</a>
+          <a href="#sectores">Sectores</a>
+          <a href="#contacto">Contacto</a>
         </nav>
       </div>
     </header>
-
-    <!-- HERO -->
 
     <section id="hero" class="hero">
       <div class="container hero-grid">
         <div class="hero-content">
           <h1>Protegemos lo que más valorás</h1>
-
           <p>
-            Seguros y planificación financiera para individuos, empresas y
-            productores agropecuarios. Asesoramiento profesional, cercano y
-            transparente.
+            Seguros, medicina prepaga y planificación financiera para individuos,
+            comercios, empresas y productores agropecuarios. Acompañamiento
+            profesional, cercano y claro en cada decisión.
           </p>
 
           <div class="hero-buttons">
             <a
-              href="https://wa.me/542325681632"
+              href="https://wa.me/5492325681632?text=Hola%2C%20quiero%20solicitar%20un%20presupuesto."
               target="_blank"
+              rel="noopener noreferrer"
               class="btn-primary"
             >
               Solicitar presupuesto
             </a>
 
             <a
-              href="https://wa.me/542325681632"
+              href="https://wa.me/5492325681632?text=Hola%2C%20quiero%20hablar%20con%20un%20asesor."
               target="_blank"
+              rel="noopener noreferrer"
               class="btn-secondary"
             >
               Hablar con un asesor
@@ -76,215 +73,189 @@
 
         <div class="hero-image">
           <img
-            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf"
-            alt="Protección familiar y seguros"
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+            alt="Asesoramiento cercano y profesional"
           />
         </div>
       </div>
     </section>
 
-    <!-- SERVICIOS -->
-
     <section id="servicios" class="services">
       <div class="container">
         <h2>Nuestros servicios</h2>
+        <p class="section-lead">
+          Sumamos opciones para coberturas personales, patrimoniales y
+          corporativas, con soluciones específicas para cada necesidad.
+        </p>
 
         <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">
-              <i data-lucide="heart"></i>
-            </div>
-
-            <h3>
-              <a href="servicios/seguros-vida.html"> Seguros de Vida </a>
-            </h3>
-
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="heart"></i></div>
+            <h3><a href="servicios/seguros-vida.html">Seguro de Vida</a></h3>
             <p>
-              Protección financiera para tu familia ante imprevistos, con
-              coberturas por fallecimiento o invalidez y opciones de ahorro o
-              inversión.
+              Protección para tu familia con cobertura por fallecimiento,
+              invalidez, enfermedad grave y herramientas de ahorro.
             </p>
+            <a href="servicios/seguros-vida.html">Ver más</a>
+          </article>
 
-            <a href="servicios/seguros-vida.html">Ver más →</a>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">
-              <i data-lucide="activity"></i>
-            </div>
-
-            <h3>
-              <a href="servicios/seguros-salud.html"> Seguros de Salud </a>
-            </h3>
-
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="stethoscope"></i></div>
+            <h3><a href="servicios/seguros-salud.html">Salud y Medicina Prepaga</a></h3>
             <p>
-              Cobertura médica integral con acceso a redes de atención,
-              reintegros y planes personalizados para individuos, familias y
-              empresas.
+              Planes médicos con atención integral, beneficios en farmacias,
+              médico virtual y cobertura dentro y fuera del país.
             </p>
+            <a href="servicios/seguros-salud.html">Ver más</a>
+          </article>
 
-            <a href="servicios/seguros-salud.html">Ver más →</a>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">
-              <i data-lucide="car"></i>
-            </div>
-
-            <h3>
-              <a href="servicios/seguros-automotor.html">
-                Seguros de Automotor
-              </a>
-            </h3>
-
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="car-front"></i></div>
+            <h3><a href="servicios/seguros-automotor.html">Seguro Automotor</a></h3>
             <p>
-              Protección contra accidentes, robos y daños a terceros, con
-              asistencia en ruta y cobertura adaptada a cada vehículo.
+              Coberturas para terceros, robo, incendio, granizo, inundación y
+              asistencia mecánica en ruta.
             </p>
+            <a href="servicios/seguros-automotor.html">Ver más</a>
+          </article>
 
-            <a href="servicios/seguros-automotor.html">Ver más →</a>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">
-              <i data-lucide="home"></i>
-            </div>
-
-            <h3>
-              <a href="servicios/seguros-hogar.html"> Seguros de Hogar </a>
-            </h3>
-
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="house"></i></div>
+            <h3><a href="servicios/seguros-hogar.html">Seguro de Hogar</a></h3>
             <p>
-              Protegé tu vivienda y tus bienes frente a incendios, robos, daños
-              climáticos y otros imprevistos.
+              Protección para tu vivienda, electrodomésticos, cristales,
+              bicicleta, celular y responsabilidad civil.
             </p>
+            <a href="servicios/seguros-hogar.html">Ver más</a>
+          </article>
 
-            <a href="servicios/seguros-hogar.html">Ver más →</a>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">
-              <i data-lucide="building"></i>
-            </div>
-
-            <h3>
-              <a href="servicios/seguros-empresas.html">
-                Seguros para Empresas
-              </a>
-            </h3>
-
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="building-2"></i></div>
+            <h3><a href="servicios/seguros-empresas.html">Empresas y PyMEs</a></h3>
             <p>
-              Coberturas diseñadas para proteger comercios, industrias y PyMEs
-              frente a riesgos operativos y responsabilidades legales.
+              Soluciones para comercio, industria, ART, flotas, camiones y
+              responsabilidad civil para actividades comerciales.
             </p>
+            <a href="servicios/seguros-empresas.html">Ver más</a>
+          </article>
 
-            <a href="servicios/seguros-empresas.html">Ver más →</a>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">
-              <i data-lucide="tractor"></i>
-            </div>
-
-            <h3>
-              <a href="servicios/seguros-agro.html"> Seguros Agropecuarios </a>
-            </h3>
-
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="tractor"></i></div>
+            <h3><a href="servicios/seguros-agro.html">Seguros Agropecuarios</a></h3>
             <p>
-              Protección para productores rurales: cultivos, ganado, maquinaria
-              agrícola e instalaciones frente a riesgos climáticos o
-              accidentales.
+              Coberturas para cultivos, ganado, maquinaria agrícola, silos e
+              instalaciones rurales.
             </p>
+            <a href="servicios/seguros-agro.html">Ver más</a>
+          </article>
 
-            <a href="servicios/seguros-agro.html">Ver más →</a>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <i data-lucide="shield"></i>
-            </div>
-
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="shield-check"></i></div>
             <h3>
-              <a href="servicios/responsabilidad-civil.html">
-                Responsabilidad Civil
-              </a>
+              <a href="servicios/responsabilidad-civil.html">Responsabilidad Civil</a>
             </h3>
-
             <p>
-              Cobertura frente a daños materiales o personales a terceros en el
-              ejercicio de actividades personales o profesionales.
+              Coberturas para consorcios, actividades comerciales, turismo,
+              eventos, establecimientos educativos y más.
             </p>
+            <a href="servicios/responsabilidad-civil.html">Ver más</a>
+          </article>
 
-            <a href="servicios/responsabilidad-civil.html">Ver más →</a>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">
-              <i data-lucide="line-chart"></i>
-            </div>
-
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="chart-column"></i></div>
             <h3>
-              <a href="servicios/planificacion-financiera.html">
-                Planificación Financiera
-              </a>
+              <a href="servicios/planificacion-financiera.html">Planificación Financiera</a>
             </h3>
-
             <p>
-              Asesoramiento estratégico para organizar tus finanzas, planificar
-              tu retiro y alcanzar objetivos económicos a largo plazo.
+              Estrategias para ahorro, retiro, organización patrimonial y
+              objetivos de mediano y largo plazo.
             </p>
+            <a href="servicios/planificacion-financiera.html">Ver más</a>
+          </article>
 
-            <a href="servicios/planificacion-financiera.html">Ver más →</a>
-          </div>
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="briefcase-business"></i></div>
+            <h3><a href="servicios/art.html">ART</a></h3>
+            <p>
+              Cobertura médica, rehabilitación, prevención de riesgos laborales,
+              recibos digitales y capacitación en RCP.
+            </p>
+            <a href="servicios/art.html">Ver más</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="file-check"></i></div>
+            <h3><a href="servicios/caucion-alquileres.html">Caución de Alquileres</a></h3>
+            <p>
+              Alternativa al depósito con cobertura por alquileres impagos,
+              expensas, servicios e impuestos.
+            </p>
+            <a href="servicios/caucion-alquileres.html">Ver más</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="truck"></i></div>
+            <h3><a href="servicios/camiones-flotas.html">Camiones y Flotas</a></h3>
+            <p>
+              Protección para unidades individuales o flotas con asistencia,
+              responsabilidad civil y coberturas opcionales de carga.
+            </p>
+            <a href="servicios/camiones-flotas.html">Ver más</a>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="layers-3"></i></div>
+            <h3><a href="servicios/otros-riesgos.html">Otros Riesgos</a></h3>
+            <p>
+              Crédito, mala praxis, sepelio, mascotas, transporte, consorcio,
+              construcción, técnico, energía renovable y más.
+            </p>
+            <a href="servicios/otros-riesgos.html">Ver más</a>
+          </article>
         </div>
       </div>
     </section>
-
-    <!-- POR QUE ELEGIRNOS -->
 
     <section id="beneficios" class="benefits">
       <div class="container">
-        <h2>Por qué elegir Muggetti Seguros</h2>
+        <h2>Por qué elegir Mugetti Seguros</h2>
 
         <div class="benefits-grid">
           <div class="benefit-item">
-            <div class="benefit-icon">✔</div>
-
+            <div class="benefit-icon">✓</div>
             <div>
               <h3>Asesoramiento personalizado</h3>
               <p>
-                Analizamos cada situación para ofrecer soluciones adaptadas a
-                cada cliente.
+                Analizamos cada caso para recomendar una cobertura alineada con
+                tu actividad, patrimonio y objetivos.
               </p>
             </div>
           </div>
 
           <div class="benefit-item">
-            <div class="benefit-icon">✔</div>
-
+            <div class="benefit-icon">✓</div>
             <div>
-              <h3>Transparencia y confianza</h3>
+              <h3>Gestión clara y cercana</h3>
               <p>
-                Construimos relaciones duraderas basadas en compromiso y
-                claridad.
+                Te acompañamos desde la cotización hasta la resolución de dudas,
+                cambios y siniestros.
               </p>
             </div>
           </div>
 
           <div class="benefit-item">
-            <div class="benefit-icon">✔</div>
-
+            <div class="benefit-icon">✓</div>
             <div>
-              <h3>Acompañamiento constante</h3>
+              <h3>Coberturas amplias</h3>
               <p>
-                Estamos presentes en cada etapa para ayudarte a tomar decisiones
-                seguras.
+                Trabajamos con compañías líderes para ofrecer opciones
+                personales, patrimoniales, corporativas y especiales.
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- SECTORES -->
 
     <section id="sectores" class="sectors">
       <div class="container">
@@ -295,27 +266,22 @@
             <i data-lucide="users"></i>
             <span>Individuos y familias</span>
           </div>
-
           <div class="sector-card">
-            <i data-lucide="building"></i>
+            <i data-lucide="building-2"></i>
             <span>Empresas y PyMEs</span>
           </div>
-
           <div class="sector-card">
             <i data-lucide="tractor"></i>
             <span>Productores agropecuarios</span>
           </div>
-
           <div class="sector-card">
             <i data-lucide="store"></i>
             <span>Comercios</span>
           </div>
-
           <div class="sector-card">
             <i data-lucide="briefcase"></i>
             <span>Profesionales independientes</span>
           </div>
-
           <div class="sector-card">
             <i data-lucide="factory"></i>
             <span>Industria</span>
@@ -323,38 +289,41 @@
         </div>
       </div>
     </section>
+
     <section class="stats">
-      <div class="container stats-grid">
-        <div class="stat">
-          <h3 class="stat-number" data-target="6">0</h3>
-          <p>Años asesorando clientes</p>
-        </div>
+      <div class="container">
+        <h2>Experiencia que acompaña</h2>
 
-        <div class="stat">
-          <h3 class="stat-number" data-target="300">0</h3>
-          <p>Clientes asesorados</p>
-        </div>
+        <div class="stats-grid">
+          <div class="stat">
+            <h3 class="stat-number" data-target="6">0</h3>
+            <p>Años asesorando clientes</p>
+          </div>
 
-        <div class="stat">
-          <h3>Nacional</h3>
-          <p>Cobertura en todo el país</p>
+          <div class="stat">
+            <h3 class="stat-number" data-target="300" data-prefix="+">0</h3>
+            <p>Clientes asesorados</p>
+          </div>
+
+          <div class="stat">
+            <h3>Nacional</h3>
+            <p>Cobertura en todo el país</p>
+          </div>
         </div>
       </div>
     </section>
-    <!-- CTA -->
 
     <section class="cta">
       <div class="container cta-content">
         <h2>Cotizá tu seguro sin compromiso</h2>
-
         <p>
           Recibí asesoramiento profesional y encontrá la cobertura que mejor se
           adapte a tus necesidades.
         </p>
-
         <a
-          href="https://wa.me/542325681632"
+          href="https://wa.me/5492325681632?text=Hola%2C%20quiero%20cotizar%20mi%20seguro."
           target="_blank"
+          rel="noopener noreferrer"
           class="btn-primary"
         >
           Solicitar cotización
@@ -362,72 +331,169 @@
       </div>
     </section>
 
-    <!-- FORMULARIO -->
     <section id="contacto" class="contact-section">
       <div class="container contact-grid">
         <div class="contact-info">
-          <div class="contact-logo">
-            <img class="logo" src="images/logos/logo.png" alt="" />
+          <div class="contact-info-card">
+            <div class="contact-logo">
+              <img src="images/logos/logo.png" alt="Logo de Mugetti Seguros" />
+            </div>
+            <h2>Solicitá asesoramiento</h2>
+            <p>
+              Nuestro equipo está listo para ayudarte a encontrar la cobertura
+              adecuada para vos, tu familia o tu empresa.
+            </p>
+
+            <ul class="contact-list">
+              <li class="contact-item">
+                <i data-lucide="map-pin"></i>
+                <span>Muñoz 665, Carmen de Areco, Buenos Aires, Argentina</span>
+              </li>
+              <li class="contact-item">
+                <i data-lucide="phone"></i>
+                <span>2325 681632</span>
+              </li>
+              <li class="contact-item">
+                <i data-lucide="mail"></i>
+                <span>magdalenamugetti@gmail.com</span>
+              </li>
+              <li class="contact-item">
+                <i data-lucide="clock-3"></i>
+                <span>Lunes a viernes de 8 a 18 hs</span>
+              </li>
+            </ul>
           </div>
-          <h2>Solicitá asesoramiento</h2>
-
-          <p>
-            Nuestro equipo está listo para ayudarte a encontrar la cobertura que
-            mejor se adapte a tus necesidades.
-          </p>
-
-          <div class="contact-item">
-            📍 Muñoz 665, Carmen de Areco, Buenos Aires, Argentina
-          </div>
-
-          <div class="contact-item">📞 2325 681632</div>
-
-          <div class="contact-item">✉ magdalenamugetti@gmail.com</div>
-
-          <div class="contact-item">🕒 Lunes a Viernes de 8 a 18 hs</div>
         </div>
 
         <div class="contact-form">
           <form>
-            <input type="text" placeholder="Nombre completo" required />
+            <input
+              type="text"
+              name="name"
+              placeholder="Nombre completo"
+              required
+            />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="tel" name="phone" placeholder="Teléfono" />
 
-            <input type="email" placeholder="Email" required />
-
-            <input type="tel" placeholder="Teléfono" />
-
-            <select>
-              <option>Tipo de seguro</option>
+            <select name="insurance" required>
+              <option value="">Tipo de seguro</option>
               <option>Automotor</option>
               <option>Hogar</option>
               <option>Vida</option>
-              <option>Salud</option>
-              <option>Empresas</option>
+              <option>Salud / Medicina prepaga</option>
+              <option>Empresas y PyMEs</option>
               <option>Agro</option>
+              <option>ART</option>
+              <option>Caución de alquileres</option>
+              <option>Camiones y flotas</option>
+              <option>Otros riesgos</option>
             </select>
 
-            <textarea placeholder="Mensaje" rows="8"></textarea>
+            <textarea
+              name="message"
+              rows="8"
+              placeholder="Contanos qué necesitás asegurar"
+            ></textarea>
 
             <button type="submit" class="btn-primary">Enviar consulta</button>
+            <p class="form-note">
+              Al enviar, se abrirá WhatsApp con tu consulta ya armada.
+            </p>
           </form>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <section class="partners" aria-label="Seguros asociados">
+      <div class="container">
+        <h2>Seguros asociados</h2>
+        <div class="partner-track">
+          <div class="partner-chip">Sancor Seguros</div>
+          <div class="partner-chip">Federación Patronal</div>
+          <div class="partner-chip">Rivadavia</div>
+          <div class="partner-chip">Meridional</div>
+          <div class="partner-chip">San Cristóbal</div>
+          <div class="partner-chip">Zurich</div>
+          <div class="partner-chip">Galicia Seguros</div>
+          <div class="partner-chip">Mercantil Andina</div>
+          <div class="partner-chip">Allianz</div>
+          <div class="partner-chip">BBVA Seguros</div>
+          <div class="partner-chip">Andina ART</div>
+          <div class="partner-chip">Experta ART</div>
+          <div class="partner-chip">Provincia ART</div>
+          <div class="partner-chip">Prevención ART</div>
+          <div class="partner-chip">Asociart ART</div>
+          <div class="partner-chip">Prevención Salud</div>
+          <div class="partner-chip">Assist Card</div>
+          <div class="partner-chip">Coris</div>
+          <div class="partner-chip">Swiss Medical</div>
+          <div class="partner-chip">Sancor Seguros</div>
+          <div class="partner-chip">Federación Patronal</div>
+          <div class="partner-chip">Rivadavia</div>
+          <div class="partner-chip">Meridional</div>
+          <div class="partner-chip">San Cristóbal</div>
+          <div class="partner-chip">Zurich</div>
+          <div class="partner-chip">Galicia Seguros</div>
+          <div class="partner-chip">Mercantil Andina</div>
+          <div class="partner-chip">Allianz</div>
+          <div class="partner-chip">BBVA Seguros</div>
+          <div class="partner-chip">Andina ART</div>
+          <div class="partner-chip">Experta ART</div>
+          <div class="partner-chip">Provincia ART</div>
+          <div class="partner-chip">Prevención ART</div>
+          <div class="partner-chip">Asociart ART</div>
+          <div class="partner-chip">Prevención Salud</div>
+          <div class="partner-chip">Assist Card</div>
+          <div class="partner-chip">Coris</div>
+          <div class="partner-chip">Swiss Medical</div>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
-      <div class="container footer-content">
-        <p>© 2026 Muggetti Seguros. Todos los derechos reservados.</p>
+      <div class="container">
+        <div class="footer-bottom">
+          <div class="footer-copy">
+            <span>Mugetti Seguros</span>
+            <span>CUIT: 27-27408413-3</span>
+            <span>Muñoz 665, Carmen de Areco, Buenos Aires</span>
+          </div>
+
+          <div class="footer-social">
+            <span class="social-placeholder" aria-hidden="true">
+              <i data-lucide="shield-check"></i>
+            </span>
+            <a
+              href="https://www.instagram.com/mugettisegurosgenerales/?__pwa=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram de Mugetti Seguros"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                role="img"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17.5" cy="6.5" r="1"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
+
     <a
-      href="https://wa.me/542325681632"
+      href="https://wa.me/5492325681632"
       class="whatsapp-button"
-      target="_blank"
+      data-message="Hola, quiero asesoramiento sobre seguros."
       aria-label="WhatsApp"
     >
       <i data-lucide="message-circle"></i>
     </a>
+
     <script src="js/navbar.js"></script>
     <script src="js/form-handler.js"></script>
     <script src="js/whatsapp.js"></script>

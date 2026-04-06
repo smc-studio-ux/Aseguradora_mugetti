@@ -3,234 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Seguros de Salud | Muggetti Seguros</title>
-
+    <title>Salud y Medicina Prepaga | Mugetti Seguros</title>
     <meta
       name="description"
-      content="Cobertura médica integral con acceso a redes de atención, reintegros y planes personalizados."
+      content="Planes de medicina prepaga con atención médica, psicología, ortodoncia, médico virtual y beneficios adicionales."
     />
-
     <script src="https://unpkg.com/lucide@latest"></script>
-
     <link rel="stylesheet" href="../css/styles.css" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
-
   <body>
-    <!-- NAVBAR -->
-
     <header class="navbar">
       <div class="container navbar-container">
-        <a href="index.html" class="logo"
-          ><img class="img-logo" src="../images/logos/logo.png" alt="" /><span
-            >MUGETTI SEGUROS</span
-          ></a
-        >
-
-        <button class="menu-toggle">☰</button>
-
+        <a href="../index.html" class="logo">
+          <img src="../images/logos/logo.png" alt="Logo de Mugetti Seguros" />
+          <span>Mugetti Seguros</span>
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
         <nav class="nav-menu">
-          <a href="../index.html#hero">INICIO</a>
-          <a href="../index.html#servicios">SERVICIOS</a>
-          <a href="../index.html#beneficios">NOSOTROS</a>
-          <a href="../index.html#sectores">SECTORES</a>
-          <a href="../index.html#contacto">CONTACTO</a>
+          <a href="../index.html#hero">Inicio</a>
+          <a href="../index.html#servicios">Servicios</a>
+          <a href="../index.html#beneficios">Nosotros</a>
+          <a href="../index.html#sectores">Sectores</a>
+          <a href="../index.html#contacto">Contacto</a>
         </nav>
       </div>
     </header>
 
-    <!-- HERO -->
-
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-content">
-          <h1>Seguros de Salud</h1>
-
+          <h1>Salud y Medicina Prepaga</h1>
           <p>
-            Cobertura médica diseñada para brindarte tranquilidad frente a
-            imprevistos de salud, con acceso a redes médicas, reintegros y
-            atención profesional.
+            Planes de salud con atención médica, beneficios adicionales y
+            gestión digital para acompañarte todos los días.
           </p>
-
           <div class="hero-buttons">
             <a
-              href="https://wa.me/542325681632?text=Hola%20quisiera%20cotizar%20un%20seguro%20de%20salud"
+              href="https://wa.me/5492325681632?text=Hola%2C%20quiero%20cotizar%20medicina%20prepaga."
               target="_blank"
+              rel="noopener noreferrer"
               class="btn-primary"
             >
               Solicitar cotización
             </a>
-
             <a
-              href="https://wa.me/542325681632"
+              href="https://wa.me/5492325681632?text=Hola%2C%20quiero%20asesoramiento%20sobre%20salud%20y%20medicina%20prepaga."
               target="_blank"
+              rel="noopener noreferrer"
               class="btn-secondary"
             >
               Hablar con un asesor
             </a>
           </div>
         </div>
-
         <div class="hero-image">
           <img
-            src="https://images.unsplash.com/photo-1582750433449-648ed127bb54"
-            alt="Seguro de salud"
+            src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=1200&q=80"
+            alt="Planes de salud y medicina prepaga"
           />
         </div>
       </div>
     </section>
 
-    <!-- DESCRIPCIÓN -->
-
-    <section class="benefits">
-      <div class="container">
-        <h2>Protección para tu salud y la de tu familia</h2>
-
-        <p>
-          Los seguros de salud permiten acceder a atención médica de calidad
-          frente a enfermedades, tratamientos o intervenciones médicas. Son una
-          herramienta clave para reducir el impacto económico de gastos médicos
-          inesperados.
-        </p>
-
-        <p>
-          Existen diferentes planes adaptados a individuos, familias y empresas,
-          con opciones de cobertura amplias y flexibles.
-        </p>
-      </div>
-    </section>
-
-    <!-- COBERTURAS -->
-
     <section class="services">
       <div class="container">
         <h2>Coberturas principales</h2>
-
         <div class="services-grid">
-          <div class="service-card">
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="badge-check"></i></div>
+            <h3>Sin bonos ni copagos</h3>
+            <p>Planes con atención simple y previsible para la consulta diaria.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="brain"></i></div>
+            <h3>Sesiones de psicología</h3>
+            <p>Cobertura para acompañamiento terapéutico según el plan elegido.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon"><i data-lucide="smile"></i></div>
+            <h3>Ortodoncia hasta 35 años</h3>
+            <p>Opciones con cobertura odontológica y beneficios de ortodoncia.</p>
+          </article>
+          <article class="service-card">
             <div class="service-icon">
-              <i data-lucide="stethoscope"></i>
+              <i data-lucide="monitor-smartphone"></i>
             </div>
-
-            <h3>Red médica</h3>
-
-            <p>Acceso a clínicas, sanatorios y profesionales de salud.</p>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">
-              <i data-lucide="clipboard-list"></i>
-            </div>
-
-            <h3>Estudios y tratamientos</h3>
-
-            <p>Cobertura para consultas médicas, estudios y tratamientos.</p>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">
-              <i data-lucide="wallet"></i>
-            </div>
-
-            <h3>Reintegros</h3>
-
-            <p>Posibilidad de recuperar gastos médicos fuera de la red.</p>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon">
-              <i data-lucide="shield"></i>
-            </div>
-
-            <h3>Cobertura integral</h3>
-
-            <p>Planes adaptados a diferentes necesidades de salud.</p>
-          </div>
+            <h3>Médico virtual 24/7</h3>
+            <p>Atención médica las 24 horas, los 365 días del año.</p>
+          </article>
         </div>
       </div>
     </section>
-
-    <!-- TIPOS -->
 
     <section class="sectors">
       <div class="container">
-        <h2>Planes disponibles</h2>
-
+        <h2>Beneficios que podés sumar</h2>
         <div class="sectors-grid">
           <div class="sector-card">
-            <i data-lucide="user"></i>
-            <span>Plan individual</span>
+            <i data-lucide="glasses"></i>
+            <span>Cobertura y descuentos en ópticas</span>
           </div>
-
           <div class="sector-card">
-            <i data-lucide="users"></i>
-            <span>Plan familiar</span>
+            <i data-lucide="pill"></i>
+            <span>Anticonceptivos al 100%</span>
           </div>
-
           <div class="sector-card">
-            <i data-lucide="building"></i>
-            <span>Plan corporativo</span>
+            <i data-lucide="sparkles"></i>
+            <span>Tratamientos de cirugía estética</span>
+          </div>
+          <div class="sector-card">
+            <i data-lucide="smartphone"></i>
+            <span>Gestión completa desde el celular</span>
+          </div>
+          <div class="sector-card">
+            <i data-lucide="map"></i>
+            <span>Cobertura en todo el país y limítrofes</span>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- BENEFICIOS -->
-
-    <section class="benefits">
-      <div class="container">
-        <h2>Ventajas</h2>
-
-        <div class="benefits-grid">
-          <div class="benefit-item">
-            <div class="benefit-icon">✔</div>
-
-            <div>
-              <h3>Acceso rápido a atención médica</h3>
-              <p>Red de profesionales y centros médicos.</p>
-            </div>
-          </div>
-
-          <div class="benefit-item">
-            <div class="benefit-icon">✔</div>
-
-            <div>
-              <h3>Reducción de gastos médicos</h3>
-              <p>Menor impacto económico ante imprevistos de salud.</p>
-            </div>
-          </div>
-
-          <div class="benefit-item">
-            <div class="benefit-icon">✔</div>
-
-            <div>
-              <h3>Planes flexibles</h3>
-              <p>Opciones adaptadas a cada situación personal o familiar.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
 
     <section class="cta">
       <div class="container cta-content">
-        <h2>Solicitá asesoramiento</h2>
-
+        <h2>Encontrá tu plan ideal</h2>
         <p>
-          Te ayudamos a encontrar el plan de salud más adecuado para vos o tu
-          familia.
+          Te ayudamos a comparar coberturas y elegir una opción de salud acorde
+          a tu edad, tu grupo familiar y tus prioridades.
         </p>
-
         <a
-          href="https://wa.me/542325681632?text=Hola%20quisiera%20cotizar%20un%20seguro%20de%20salud"
+          href="https://wa.me/5492325681632?text=Hola%2C%20quiero%20cotizar%20medicina%20prepaga."
           target="_blank"
+          rel="noopener noreferrer"
           class="btn-primary"
         >
           Solicitar cotización
@@ -238,25 +145,39 @@
       </div>
     </section>
 
-    <!-- FOOTER -->
-
     <footer class="footer">
-      <div class="container footer-content">
-        <p>© 2026 Muggetti Seguros. Todos los derechos reservados.</p>
+      <div class="container">
+        <div class="footer-bottom">
+          <div class="footer-copy">
+            <span>Mugetti Seguros</span>
+            <span>CUIT: 27-27408413-3</span>
+            <span>Muñoz 665, Carmen de Areco, Buenos Aires</span>
+          </div>
+          <div class="footer-social">
+            <span class="social-placeholder" aria-hidden="true">
+              <i data-lucide="shield-check"></i>
+            </span>
+            <span class="social-placeholder" aria-hidden="true">
+              <i data-lucide="instagram"></i>
+            </span>
+          </div>
+        </div>
       </div>
     </footer>
+
     <a
-      href="https://wa.me/542325681632"
+      href="https://wa.me/5492325681632"
       class="whatsapp-button"
-      target="_blank"
+      data-message="Hola, quiero asesoramiento sobre salud y medicina prepaga."
       aria-label="WhatsApp"
     >
       <i data-lucide="message-circle"></i>
     </a>
+
     <script src="../js/navbar.js"></script>
+    <script src="../js/whatsapp.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/scroll-animations.js"></script>
-
     <script>
       lucide.createIcons();
     </script>

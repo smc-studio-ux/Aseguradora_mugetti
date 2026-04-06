@@ -1,23 +1,28 @@
-const menuToggle = document.querySelector(".menu-toggle");
-const navMenu = document.querySelector(".nav-menu");
+function initNavbar() {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector(".nav-menu");
 
-// abrir / cerrar menú
-if (menuToggle && navMenu) {
+  if (!menuToggle || !navMenu) {
+    return;
+  }
+
   menuToggle.addEventListener("click", () => {
     navMenu.classList.toggle("nav-open");
   });
-}
 
-// cerrar menú al tocar un link
-document.querySelectorAll(".nav-menu a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navMenu.classList.remove("nav-open");
+  document.querySelectorAll(".nav-menu a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("nav-open");
+    });
+
+    const linkUrl = new URL(link.href, window.location.href);
+    const currentUrl = new URL(window.location.href);
+
+    if (
+      linkUrl.pathname === currentUrl.pathname &&
+      linkUrl.hash === currentUrl.hash
+    ) {
+      link.classList.add("active");
+    }
   });
-});
-
-// marcar link activo
-document.querySelectorAll(".nav-menu a").forEach((link) => {
-  if (link.href === window.location.href) {
-    link.classList.add("active");
-  }
-});
+}

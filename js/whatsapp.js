@@ -1,21 +1,14 @@
 function initWhatsApp() {
+  const button = document.querySelector(".whatsapp-button");
 
-    const phone = "5492325681632";
+  if (!button) {
+    return;
+  }
 
-    const message = "Hola, quisiera consultar sobre seguros.";
+  const defaultMessage =
+    button.dataset.message || "Hola, quiero asesoramiento sobre seguros.";
 
-    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-
-    const button = document.createElement("a");
-
-    button.href = url;
-
-    button.target = "_blank";
-
-    button.classList.add("whatsapp-button");
-
-    button.innerHTML = "💬";
-
-    document.body.appendChild(button);
-
+  button.href = `https://wa.me/5492325681632?text=${encodeURIComponent(defaultMessage)}`;
+  button.target = "_blank";
+  button.rel = "noopener noreferrer";
 }
